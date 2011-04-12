@@ -5,6 +5,7 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.os.Bundle;
 import android.text.ClipboardManager;
 import android.text.InputType;
@@ -40,6 +41,7 @@ public class MainActivity extends Activity {
 	Button b2;
 	Button b3;
 	Button b4;
+	Button bh;
 	CheckBox c1;
 	CheckBox c2;
 	boolean isSecure = false;
@@ -57,6 +59,7 @@ public class MainActivity extends Activity {
 		b4 = (Button) findViewById(R.id.button4);
 		c1 = (CheckBox) findViewById(R.id.checkBox1);
 		c2 = (CheckBox) findViewById(R.id.checkBox2);
+		bh = (Button) findViewById(R.id.buttonH);
 
 		b1.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
@@ -103,6 +106,19 @@ public class MainActivity extends Activity {
 				} else {
 					setNotSecure();
 				}
+			}
+		});
+		
+		bh.setText("?");
+		
+		AlertDialog.Builder builder = new AlertDialog.Builder(this);
+		builder.setTitle("About");
+		builder.setMessage("Copyright 2011, Andreas Nyhren\n\nA sentence based password generation program. Enter a unique sentence, then click an encoding button to generate a strong, secure password based on that sentence. Use different sentences to generate different passwords.");
+		final AlertDialog alert = builder.create();
+		
+		bh.setOnClickListener(new View.OnClickListener() {
+			public void onClick(View v) {				
+				alert.show();
 			}
 		});
 

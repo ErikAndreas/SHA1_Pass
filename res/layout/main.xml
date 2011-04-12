@@ -5,7 +5,10 @@
     android:layout_height="fill_parent"
     >
     <TextView android:id="@+id/textView1" android:layout_width="fill_parent" android:text="Sentence: " android:layout_height="wrap_content"></TextView>
-    <EditText android:id="@+id/editText1" android:layout_width="fill_parent" android:text="" android:layout_height="wrap_content"></EditText>
+    <LinearLayout android:layout_width="fill_parent" android:id="@+id/linearLayout1" android:layout_height="wrap_content">
+    <EditText android:id="@+id/editText1" android:layout_width="wrap_content" android:layout_weight="1" android:text="" android:layout_height="wrap_content"></EditText>
+    <Button android:text="[?]" android:id="@+id/buttonH" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+    </LinearLayout>
     <LinearLayout android:layout_width="fill_parent" android:id="@+id/linearLayout1" android:layout_height="wrap_content">
         <Button android:text="Hex" android:id="@+id/button1" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
         <Button android:text="Hex Half" android:id="@+id/button2" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
