@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <TextView android:id="@+id/textView1" android:layout_width="fill_parent" android:text="Sentence: " android:layout_height="wrap_content"></TextView>
+    <EditText android:id="@+id/editText1" android:layout_width="fill_parent" android:text="" android:layout_height="wrap_content"></EditText>
+    <LinearLayout android:layout_width="fill_parent" android:id="@+id/linearLayout1" android:layout_height="wrap_content">
+        <Button android:text="Hex" android:id="@+id/button1" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+        <Button android:text="Hex Half" android:id="@+id/button2" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+        <Button android:text="B64" android:id="@+id/button3" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+        <Button android:text="B64 Half" android:id="@+id/button4" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:id="@+id/linearLayout1" android:layout_height="wrap_content">
+    	<CheckBox android:id="@+id/checkBox1" android:layout_width="wrap_content" android:layout_height="wrap_content"></CheckBox>
+    	<TextView android:id="@+id/textView2" android:layout_width="wrap_content" android:text="View sentence" android:layout_height="wrap_content"></TextView>
+    	<CheckBox android:id="@+id/checkBox2" android:layout_width="wrap_content" android:layout_height="wrap_content"></CheckBox>
+    	<TextView android:id="@+id/textView3" android:layout_width="wrap_content" android:text="Secure mode" android:layout_height="wrap_content"></TextView>
+    	<EditText android:id="@+id/editText2" android:layout_width="wrap_content" android:text="" android:layout_height="wrap_content"></EditText>
+    </LinearLayout>
+</LinearLayout>
